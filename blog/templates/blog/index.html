@@ -1,0 +1,14 @@
+<ul>
+
+    {% for album in all_album %}
+    <li> <a href="{% url 'music:details' album.id %}">{{album.album_title}}</a></li>
+
+    {% endfor %}
+
+
+    {% load static %}
+<img src="{% static 'blog/image.jpeg' %}" alt="My image"/>
+
+</ul>
+
+
